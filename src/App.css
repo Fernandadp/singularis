@@ -1,1 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
 
+.header img {
+  height: 50px;
+  flex-grow: 2;
+  object-fit: contain;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-link {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.hamburguerMenu.open #linea-1 {
+  transform: rotate(40deg) translate(7px, 10px);
+  transition: all 0.1s ease-in-out;
+}
+
+.hamburguerMenu.open #linea-2 {
+  opacity: 0;
+}
+
+.hamburguerMenu.open #linea-3 {
+  transform: rotate(-40deg) translate(7px, -10px);
+  transition: all 0.1s ease-in-out;
+}
+
+.linea {
+  margin-top: 3px;
+  width: 20px;
+  height: 3px;
+  border-radius: 10px;
+  background: #3EA934;
+}
+
+.mobile-menu {
+  display: none;
+}
