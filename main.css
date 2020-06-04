@@ -10,26 +10,29 @@ footer {
   margin: 0;
   padding: 20px;
   border: 1px solid #000000;
-  color: #ffffff;
+  color: #335F98;
 }
 
 main {
-  background: #000000;
 }
 
 .header {
-    background: #03a9f4;
 }
 
-.hero {
-    background: #d22b1f;
+#landing {
 }
 
-.content {
-    background: #129a22;
+#servicios {
+}
+
+#centro {
+}
+
+#team {
+}
+
+#contacto {
 }
 
 .footer {
-    border: 1px solid #000000;
-    background: #616161;
 }
