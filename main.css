@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   font-family: 'Verdana', 'Geneva', sans-serif;
+  color: #335F98;
 }
 
 main,
@@ -8,31 +9,89 @@ header,
 section,
 footer {
   margin: 0;
-  padding: 20px;
-  border: 1px solid #000000;
-  color: #335F98;
+  padding: 0 1.5rem;
+  border: 1px solid #335F98;
 }
 
-main {
-}
+main {}
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.header .logo {
+  visibility: hidden;
+  width: 220px;
+}
+
+/*navigation bar*/
+#menu-mobile,
+.header .menu {
+  display: none;
+}
+
+#menu-mobile ul {
+  list-style-type: none;
+}
+
+#menu-mobile ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #335F98
+}
+
+#menu-mobile ul li a:visited {
+  color: #335F98
+}
+
+.linea {
+  margin-top: 10px;
+  width: 50px;
+  height: 3px;
+  border-radius: 10px;
+  background: #335F98;
+}
+
+/*landing page*/
 #landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#servicios {
+#landing aside {
+  text-align: center;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#centro {
+.texto-inicio {
+  width: 80%;
+  font-size: 1.2rem;
 }
 
-#team {
+.resaltar {
+  color: #3EA934;
+  font-weight: bold;
 }
 
-#contacto {
+.foto-portada {
+  object-fit: contain;
+  max-width: 100%;
+
 }
 
-.footer {
-}
+#servicios {}
+
+#centro {}
+
+#team {}
+
+#contacto {}
+
+.footer {}
