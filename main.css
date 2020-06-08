@@ -2,6 +2,7 @@ body {
   box-sizing: border-box;
   font-family: 'Verdana', 'Geneva', sans-serif;
   color: #335F98;
+  font-size: 24px;
 }
 
 main,
@@ -38,7 +39,7 @@ main {}
 
 #menu-mobile ul li a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 20px;
   color: #335F98
 }
 
@@ -72,7 +73,7 @@ main {}
 
 .texto-inicio {
   width: 80%;
-  font-size: 1.2rem;
+  font-size: 24px;
 }
 
 .resaltar {
@@ -86,9 +87,66 @@ main {}
 
 }
 
-#servicios {}
+#servicios {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-#centro {}
+#servicios>div {
+  display: flex;
+  width: 100%;
+  flex: 0 50%;
+  margin: 20px 0;
+  align-items: center;
+}
+
+#servicios>div:last-child {
+  flex: 0 100%;
+  justify-content: center;
+}
+
+.rombo {
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#rombo-1,
+#rombo-2,
+#rombo-3,
+#rombo-4,
+#rombo-5 {
+  margin-right: 20px;  
+}
+
+#rombo-1 {
+  background: #335F98;
+}
+
+#rombo-2 {
+  background: #3EA934;
+}
+
+#rombo-3 {
+  background: #D92F38;
+}
+
+#rombo-4 {
+  background: #05939D;
+}
+
+#rombo-5 {
+  background: #F59004;
+}
+
+#centro img {
+  max-width: 90%;
+  object-fit: contain;
+}
 
 #team {}
 
