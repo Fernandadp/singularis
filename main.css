@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   font-family: 'Verdana', 'Geneva', sans-serif;
   color: #335F98;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 main,
@@ -39,7 +39,6 @@ main {}
 
 #menu-mobile ul li a {
   text-decoration: none;
-  font-size: 20px;
   color: #335F98
 }
 
@@ -73,7 +72,6 @@ main {}
 
 .texto-inicio {
   width: 80%;
-  font-size: 24px;
 }
 
 .resaltar {
@@ -174,19 +172,15 @@ main {}
   font-weight: bold;
   font-size: 18px;
   transition: 1s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px;
   user-select: none;
+  background-color: rgba(0,0,0,0.4);
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
