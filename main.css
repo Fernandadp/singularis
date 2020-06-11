@@ -6,25 +6,31 @@ body {
 }
 
 main,
-header,
-section,
-footer {
+header {
   margin: 0;
   padding: 0 1.5rem;
-  border: 1px solid #335F98;
 }
 
-main {
+section,
+footer {
+  margin: 0 0 50px;
+  padding: 0 1.5rem;
+  /*border: 1px solid #335F98;*/
 }
 
 h2 {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .header .logo {
@@ -39,9 +45,13 @@ h2 {
 }
 
 .hamburger-menu {
-  position: -webkit-sticky; 
-  position: sticky;
   top: 0;
+}
+
+#menu-mobile {
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 #menu-mobile ul {
@@ -55,6 +65,7 @@ h2 {
 
 #menu-mobile ul li a {
   font-size: 30px;
+  font-weight: bold;
   text-decoration: underline;
   text-underline-position: under;
   color: #335F98;
@@ -67,9 +78,23 @@ h2 {
 .linea {
   margin-top: 10px;
   width: 50px;
-  height: 3px;
+  height: 4px;
   border-radius: 10px;
   background: #335F98;
+}
+
+.hamburger-menu.open #linea-1 {
+  transform: rotate(40deg) translate(7px, 11px);
+  transition: all 0.1s ease-in-out;
+}
+
+.hamburger-menu.open #linea-2 {
+  opacity: 0;
+}
+
+.hamburger-menu.open #linea-3 {
+  transform: rotate(-40deg) translate(7px, -11px);
+  transition: all 0.1s ease-in-out;
 }
 
 /*landing page*/
@@ -102,22 +127,20 @@ h2 {
   max-width: 100%;
 }
 
+/*Servicios*/
 .servicios {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
+  font-size: 24px;
 }
 
-.servicios>div {
+.servicios > div {
   display: flex;
   width: 100%;
-  flex: 0 50%;
   margin: 20px 0;
   align-items: center;
-}
-
-.servicios>div:last-child {
-  flex: 0 100%;
-  justify-content: center;
 }
 
 .rombo {
@@ -135,7 +158,7 @@ h2 {
 #rombo-3,
 #rombo-4,
 #rombo-5 {
-  margin-right: 20px;  
+  margin-right: 20px;
 }
 
 #rombo-1 {
@@ -164,7 +187,9 @@ h2 {
 
 
 /* slider */
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -179,7 +204,8 @@ h2 {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -192,7 +218,7 @@ h2 {
   transition: 1s ease;
   border-radius: 3px;
   user-select: none;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Position the "next button" to the right */
@@ -233,7 +259,8 @@ h2 {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -246,17 +273,39 @@ h2 {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 
 #team {}
+.team-pic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-pic img {
+  flex: 0 30%;
+  object-fit: contain;
+  border: 2px solid purple;
+  margin: 5px;
+}
 
 #contacto {}
 
@@ -287,6 +336,7 @@ h2 {
 .column img {
   object-fit: contain;
 }
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -361,7 +411,7 @@ h2 {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-  
+
 }
 
 /* Number text (1/3 etc) */
