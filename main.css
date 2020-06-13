@@ -1,8 +1,11 @@
 body {
-  box-sizing: border-box;
   font-family: 'Verdana', 'Geneva', sans-serif;
   color: #335F98;
   font-size: 24px;
+}
+
+* {
+  box-sizing: border-box
 }
 
 main,
@@ -185,132 +188,7 @@ h2 {
   object-fit: contain;
 }
 
-
-/* slider */
-* {
-  box-sizing: border-box
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 1s ease;
-  border-radius: 3px;
-  user-select: none;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-
-#team {}
-.team-pic {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.team-pic img {
-  flex: 0 30%;
-  object-fit: contain;
-  border: 2px solid purple;
-  margin: 5px;
-}
-
-#contacto {}
-
-.footer {}
-
+/*SLIDER*/
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -448,3 +326,62 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+#team {}
+.team-pic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-pic img {
+  flex: 0 30%;
+  object-fit: contain;
+  border: 2px solid purple;
+  margin: 5px;
+}
+
+#contacto {}
+
+#formulario {
+  height: auto;
+  min-height: 35vh;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #335F98;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#formulario input {
+  height: 35px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#formulario textarea {
+  border-radius: 10px;
+  width: 100%;
+}
+
+#formulario label {
+  width: 100%;
+}
+
+#formulario button {
+  width: 25%;
+  height: 45px;
+  margin-top: 30px;
+  background-color: #3EA934;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.footer {}
