@@ -12,16 +12,21 @@ img {
   object-fit: contain;
 }
 
+.texto-inicio,
+.texto-final {
+  font-size: 30px;
+}
+
 main,
 header {
   margin: 0;
-  padding: 0 1.5rem;
+  padding: 0 24px;
 }
 
 section,
 footer {
   margin: 0 0 50px;
-  padding: 0 1.5rem;
+  padding: 0 24px;
   /*border: 1px solid #335F98;*/
 }
 
@@ -71,7 +76,6 @@ h2 {
 }
 
 #menu-mobile ul li a {
-  font-size: 30px;
   font-weight: bold;
   text-decoration: underline;
   text-underline-position: under;
@@ -114,7 +118,7 @@ h2 {
 
 #landing aside {
   text-align: center;
-  margin: 1em;
+  margin: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,7 +144,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 24px;
 }
 
 .servicios > div {
@@ -370,7 +373,7 @@ img.hover-shadow {
 
 #formulario textarea {
   border-radius: 10px;
-  width: 100%;
+  max-width: 100%;
 }
 
 #formulario label {
@@ -394,5 +397,3 @@ img.hover-shadow {
   flex-direction: column;
   margin: 50px 0;
 }
-
-.footer {}
