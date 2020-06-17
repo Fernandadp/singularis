@@ -12,7 +12,6 @@ img {
   object-fit: contain;
 }
 
-main,
 header {
   margin: 0;
   padding: 0 24px;
@@ -22,7 +21,7 @@ section,
 footer {
   margin: 0 0 50px;
   padding: 0 24px;
-  /*border: 1px solid #335F98;*/
+  border: 1px solid #335F98;
 }
 
 h2 {
@@ -82,8 +81,8 @@ h2 {
 }
 
 .linea {
-  margin-top: 10px;
-  width: 50px;
+  margin-top: 5px;
+  width: 30px;
   height: 4px;
   border-radius: 10px;
   background: #335F98;
@@ -201,10 +200,6 @@ h2 {
   background: #F59004;
 }
 
-#centro img {
-  object-fit: contain;
-}
-
 /*SLIDER*/
 .row {
   display: flex;
@@ -226,10 +221,6 @@ h2 {
 .column {
   flex: 0 33.33%;
   text-align: center;
-}
-
-.column img {
-  object-fit: contain;
 }
 
 /* The Modal (background) */
@@ -344,8 +335,6 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-#team {}
 .team-pic {
   display: flex;
   flex-wrap: wrap;
@@ -353,13 +342,11 @@ img.hover-shadow {
 }
 
 .team-pic img {
-  flex: 0 30%;
+  flex: 0 25%;
   object-fit: contain;
   border: 2px solid purple;
   margin: 5px;
 }
-
-#contacto {}
 
 #formulario {
   height: auto;
