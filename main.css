@@ -12,6 +12,15 @@ img {
   object-fit: contain;
 }
 
+a {
+  text-decoration: none;
+  color: #335F98;
+}
+
+a:visited {
+  color: #335F98;
+}
+
 header {
   margin: 0;
   padding: 0 24px;
@@ -21,7 +30,7 @@ section,
 footer {
   margin: 0 0 50px;
   padding: 0 24px;
-  border: 1px solid #335F98;
+/*  border: 1px solid #335F98;*/
 }
 
 h2 {
@@ -89,7 +98,7 @@ h2 {
 }
 
 .hamburger-menu.open #linea-1 {
-  transform: rotate(40deg) translate(7px, 11px);
+  transform: rotate(40deg) translate(7px, 7px);
   transition: all 0.1s ease-in-out;
 }
 
@@ -98,8 +107,33 @@ h2 {
 }
 
 .hamburger-menu.open #linea-3 {
-  transform: rotate(-40deg) translate(7px, -11px);
+  transform: rotate(-40deg) translate(7px, -7px);
   transition: all 0.1s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .hamburger-menu,
+  .header .logo {
+    display: none;
+  }
+  
+  .header .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
+  
+  #logo-desktop {
+    max-width: 150px;
+  }
+  
+  .nav-desktop {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
 }
 
 /*landing page*/
@@ -201,26 +235,16 @@ h2 {
 }
 
 /*SLIDER*/
-.row {
+
+#centro .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  justify-content: center;
 }
 
 /* Create four equal columns that floats next to eachother */
 .column {
-  flex: 0 33.33%;
-  text-align: center;
+  flex: 0 25%;
 }
 
 /* The Modal (background) */
@@ -326,14 +350,23 @@ img.demo {
   opacity: 1;
 }
 
+/*
 img.hover-shadow {
   width: 200px;
   transition: 0.3s;
 }
+*/
+
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.lightbox {
+  display: none;
+}
+
+/*Team*/
 
 .team-pic {
   display: flex;
@@ -343,11 +376,11 @@ img.hover-shadow {
 
 .team-pic img {
   flex: 0 25%;
-  object-fit: contain;
   border: 2px solid purple;
   margin: 5px;
 }
 
+/*Contacto*/
 #formulario {
   height: auto;
   min-height: 35vh;
@@ -378,7 +411,7 @@ img.hover-shadow {
 }
 
 #formulario button {
-  width: 25%;
+  width: 40%;
   height: 45px;
   margin-top: 30px;
   background-color: #3EA934;
