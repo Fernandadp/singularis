@@ -45,7 +45,7 @@ h2 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 1);
 }
 
 .header .logo {
@@ -112,6 +112,10 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  
   .hamburger-menu,
   .header .logo {
     display: none;
@@ -179,6 +183,23 @@ h2 {
 
 .mision {
   align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+  #landing .landing {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .landing-cover,
+  .landing-main-text {
+    width: 50%;
+  }
+  
+  #landing .landing-vm {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*Servicios*/
@@ -380,6 +401,18 @@ img.hover-shadow {
   margin: 5px;
 }
 
+@media (min-width: 768px) {
+  #team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .team-texto {
+    width: 50%;
+  }
+}
+
 /*Contacto*/
 #formulario {
   height: auto;
@@ -426,4 +459,23 @@ img.hover-shadow {
   display: flex;
   flex-direction: column;
   margin: 50px 0;
+}
+
+@media (min-width: 768px) {
+  #contacto .contacto {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #formulario {
+    width: 40%;
+  }
+  
+  .contacto-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
