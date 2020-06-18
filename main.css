@@ -258,6 +258,7 @@ h2 {
 /*SLIDER*/
 
 #centro .row {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -265,7 +266,12 @@ h2 {
 
 /* Create four equal columns that floats next to eachother */
 .column {
-  flex: 0 25%;
+  width: 30%;
+}
+
+.column img {
+  max-width: 90%;
+  margin: 5px;
 }
 
 /* The Modal (background) */
